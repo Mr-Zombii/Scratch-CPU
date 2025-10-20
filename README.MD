@@ -1,5 +1,7 @@
 # Scratch CPU
 
+## Im planning on recoding the assembler and documenting this within a few days
+
 This is a Simple stack based CPU that I make on scratch with a fully fledged assembly language for.
 
 Scratch Project:
