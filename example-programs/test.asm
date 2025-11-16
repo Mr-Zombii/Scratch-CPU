@@ -47,6 +47,12 @@ LABEL ProgramStart
         PSH 2
         ADD
     DUP
+    PSH_DY 65535
+    GOTO_NE @SKIP
+    GOTO @SKIP2
+    LABEL SKIP
+
+    DUP
     GOTO @checkForKeyPress
     LABEL ResumeCounter
     SWP
@@ -56,6 +62,7 @@ LABEL ProgramStart
     PSH_DY 65535
     GOTO_NE @Counter
     POP
+    LABEL SKIP2
     GOTO @ProgramStart
 
 LABEL EXIT
